@@ -1,0 +1,192 @@
+body {
+    font-family: "Courier New", monospace;
+    background-color: #000;
+    color: #0F0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ekran yüksekliği kadar minimum alan ayır */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0F0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* Header'ı öne getir */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    flex: 1; /* Boş alanı doldur */
+    margin-top: 20px; /* Header yüksekliği kadar boşluk bırak */
+}
+
+main a:visited {
+    color: #FFFFFF;
+}
+
+main a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+}
+
+main a:hover {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+main a::before,
+main a::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 1px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease-in-out;
+}
+
+main a::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main a::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+main a:hover::before,
+main a:hover::after {
+    width: 100%;
+}
+
+footer {
+    background-color: #0F0;
+    padding: 1px;
+    text-align: center;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0F0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+form {
+    width: 300px;
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    width: 80px;
+    margin-top: 5px;
+}
+
+table {
+    width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #0F0;
+}
+
+textarea {
+    width: 50%;
+    height: 500px;
+    margin: 20px auto;
+    resize: vertical;
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+    scrollbar-width: thin;
+    scrollbar-color: #0F0 #000;
+}
+
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #0F0;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    main {
+        margin-top: 80px; /* Header yüksekliği kadar boşluk bırak */
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
