@@ -133,6 +133,29 @@ input[type="submit"] {
     margin-top: 5px;
 }
 
+select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #0F0;
+    border: 1px solid #0F0;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><polygon points='5,0 0,6 10,6' style='fill:#0F0;' /></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 6px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #00FF00;
+}
+
 table {
     width: 600px;
     margin: 20px auto;
