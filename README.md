@@ -1,4 +1,4 @@
-# Tools of Web 🇺🇸
+# Tools of Web (🇺🇸)
 
 **Tools of Web** is a simple yet powerful project designed to simplify the passive information gathering process. It contains a variety of tools to make your reconnaissance tasks more efficient. Below is a quick overview of the tools available:
 
@@ -21,7 +21,7 @@
 
 ---
 
-# Tools of Web 🇹🇷
+# Tools of Web (🇹🇷)
 
 **Tools of Web**, pasif bilgi toplama sürecinizi kolaylaştırmak için tasarlanmış basit ama etkili bir projedir. Projede yer alan araçlar, keşif görevlerinizi daha verimli hale getirecek. Araçlar hakkında kısa bir özet aşağıdadır:
 
