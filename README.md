@@ -41,5 +41,3 @@
 | 📄 **HTTPHeaders**  | Web sitesinin HTTP başlıklarını analiz edin. |
 | 📊 **HTTPStatusChecker** | Web sitesinin HTTP durumunu kontrol edin. |
 | 🛡️ **VulnerabilityScanner** | Web sitesinin potansiyel güvenlik açıklarını tarayın. |
-
----
